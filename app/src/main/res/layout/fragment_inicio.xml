@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".inicio.Inicio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1DDE6">
+
+        <Button
+            android:id="@+id/buscar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="180dp"
+            android:background="#DDF1E8"
+            android:text="@string/buscar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/palabra_clave"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="524dp"
+            android:ems="10"
+            android:hint="@string/palabra_clave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/autor"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="452dp"
+            android:ems="10"
+            android:hint="@string/autor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/puntos_min"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="384dp"
+            android:ems="10"
+            android:hint="@string/puntos_minimos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+
