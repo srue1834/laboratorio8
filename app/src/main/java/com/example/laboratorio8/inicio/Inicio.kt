@@ -1,15 +1,11 @@
 package com.example.laboratorio8.inicio
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.ui.NavigationUI
-
 import com.example.laboratorio8.R
 import com.example.laboratorio8.databinding.FragmentInicioBinding
 
@@ -23,7 +19,6 @@ class Inicio : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_inicio, container, false)
         val binding = DataBindingUtil.inflate<FragmentInicioBinding>(inflater,
             R.layout.fragment_inicio, container, false)
 
@@ -33,17 +28,10 @@ class Inicio : Fragment() {
 
         setHasOptionsMenu(true)
         return binding.root
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(
-            item!!,
-            requireView().findNavController()
-        )
-                || super.onOptionsItemSelected(item)
 
     }
-
-
 
 }
+
+
